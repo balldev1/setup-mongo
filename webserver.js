@@ -10,8 +10,9 @@ connectDB();
 // middleware
 app.use(express.json());
 
-// routes api for user
+// routes api 
 app.use("/api/users", require("./routes/user.routes"));
+app.use("/api/store", require("./routes/store.routes"));
 
 // test route
 app.get("/", (req, res) => {
